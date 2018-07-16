@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/snackBarLayout">
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Settings"
+                android:layout_width="match_parent"
+                android:id="@+id/name"
+                android:textSize="24sp"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/dashboard"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:contentPadding="10dp"
+                    app:cardElevation="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/close"
+                    app:cardBackgroundColor="@color/headerColor"
+                    app:cardPreventCornerOverlap="false">
+
+                    <TextView
+                        android:text="x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView31"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/dashboard"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:text="Ceiling Grade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView26"
+                            android:textSize="24sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingLeft="10dp"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:contentPadding="5dp"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="Passing Grade"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView18"
+                                android:layout_weight="1"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:text="95"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/displayPassingGrade"
+                                android:layout_weight="1"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="@drawable/dashboard"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:text="Automatic Syncing"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView266"
+                                android:textSize="24sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:paddingLeft="10dp"
+                                android:layout_weight="1"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:contentPadding="5dp"
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Turning these feature on will automatically enable the app to save and retrieve data from server once connected to the internet."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView73" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_margin="5dp">
+
+                                    <TextView
+                                        android:text="Upload Syncing"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView98"
+                                        android:layout_weight="1"
+                                        android:textSize="18sp" />
+
+                                    <Switch
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/uploadSwitch"
+                                        android:layout_weight="1"
+                                        android:gravity="right|center_vertical"
+                                        android:paddingRight="10dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/uploadLinear"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:text="Last Date Sync: 09/18/2015"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/uploadDate"
+                                        android:layout_weight="1"
+                                        android:textSize="15sp" />
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardElevation="0dp"
+                                        android:foreground="?android:attr/selectableItemBackground"
+                                        android:clickable="true"
+                                        app:cardBackgroundColor="@android:color/white"
+                                        android:id="@+id/upload"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:srcCompat="@drawable/sync"
+                                            android:id="@+id/imageView16"
+                                            android:scaleType="fitXY" />
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/darker_gray"></LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:layout_margin="5dp">
+
+                                    <TextView
+                                        android:text="Download Syncing"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView50"
+                                        android:layout_weight="1"
+                                        android:textSize="18sp" />
+
+                                    <Switch
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/downloadSwitch"
+                                        android:layout_weight="1"
+                                        android:gravity="right|center_vertical"
+                                        android:paddingRight="10dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/downloadLinear"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:text="Last Date Sync: 09/18/2015"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/downloadDate"
+                                        android:layout_weight="1"
+                                        android:textSize="15sp" />
+
+                                    <android.support.v7.widget.CardView
+                                        app:cardElevation="0dp"
+                                        android:foreground="?android:attr/selectableItemBackground"
+                                        android:clickable="true"
+                                        app:cardBackgroundColor="@android:color/white"
+                                        android:id="@+id/download"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:srcCompat="@drawable/sync"
+                                            android:id="@+id/imageView17"
+                                            android:scaleType="fitXY" />
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/dashboard">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="My Account"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView77"
+                                android:textSize="24sp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:paddingLeft="10dp"
+                                android:textColor="@android:color/white"
+                                android:gravity="center_vertical" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                                    android:id="@+id/closeAccount"
+                                    android:padding="5dp"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_pencil"
+                                    android:id="@+id/openAccount"
+                                    android:padding="5dp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/imageView5"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/ic_account"
+                                    android:layout_marginRight="10dp" />
+
+                                <TextView
+                                    android:text="TextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vusername"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:text="Name"
+                                    android:ems="10"
+                                    android:id="@+id/eusername"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/imageView6"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/ic_key"
+                                    android:layout_marginRight="10dp" />
+
+                                <TextView
+                                    android:text="TextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/vpassword"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textPersonName"
+                                    android:text="Name"
+                                    android:ems="10"
+                                    android:id="@+id/epassword"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/save"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardCornerRadius="15dp"
+                                app:contentPadding="5dp"
+                                app:cardBackgroundColor="@color/btnColor"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="70dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|center_horizontal">
+
+                                    <ImageView
+                                        app:srcCompat="@android:drawable/ic_menu_save"
+                                        android:id="@+id/imageView7"
+                                        android:scaleType="fitXY"
+                                        android:layout_height="25dp"
+                                        android:layout_width="25dp" />
+                                    <TextView
+                                        android:text="Save"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView23"
+                                        android:textAlignment="center"
+                                        android:layout_margin="5dp" />
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

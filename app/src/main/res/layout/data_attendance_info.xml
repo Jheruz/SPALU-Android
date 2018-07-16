@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="Date"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView27"
+                    android:textSize="18sp"
+                    android:layout_width="100dp" />
+
+                <TextView
+                    android:text="12/07/2017"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="Grade"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView33"
+                    android:textSize="18sp"
+                    android:layout_width="100dp" />
+
+                <TextView
+                    android:text="A"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grade"
+                    android:textSize="18sp"
+                    android:layout_width="50dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/gradeEditText"
+                    android:maxLength="5"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:selectAllOnFocus="true"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:text="Present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/present"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absent"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="Excuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/excuse"
+                    android:layout_weight="1" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btnColor">#A5D6A7</color>
+    <color name="headerColor">#4caf50</color>
+    <color name="tabDivider">#dcedc8</color>
+
+    <color name="exelent">#1b5e20</color>
+    <color name="mexelent">#ccff90</color>
+    <color name="outstanding">#0d47a1</color>
+    <color name="vgood">#b3e5fc</color>
+    <color name="good">#dd2c00</color>
+    <color name="satisfactory">#ffab91</color>
+    <color name="fsatisfactory">#fff59d</color>
+    <color name="msatisfactory">#ffee58</color>
+    <color name="passed">#ffeb3b</color>
+    <color name="failed">#d50000</color>
+</resources>

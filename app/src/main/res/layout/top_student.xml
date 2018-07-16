@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Top 10 Student"
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:textSize="24sp"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/dashboard"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:contentPadding="10dp"
+                app:cardElevation="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/close"
+                app:cardBackgroundColor="@color/headerColor"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:text="x"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView31"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:visibility="gone">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/helpList" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top10">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Select Term"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView75"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:layout_margin="5dp"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/termList"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/black"></LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="No."
+                android:layout_height="match_parent"
+                android:id="@+id/tv1"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_width="50dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv2"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:text="Grade"
+                android:layout_height="match_parent"
+                android:id="@+id/tv3"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:layout_width="70dp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/studentList" />
+    </LinearLayout>
+
+</LinearLayout>

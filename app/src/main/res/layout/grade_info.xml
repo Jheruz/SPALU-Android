@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    app:contentPadding="5dp"
+    android:background="@android:color/transparent"
+    android:paddingBottom="10dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showSnackBar">
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/dashboard"
+            android:paddingLeft="10dp"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="DELA CRUZ, JEROME B."
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/name"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white" />
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/close"
+                    app:cardBackgroundColor="@color/headerColor"
+                    app:contentPadding="10dp">
+
+                    <TextView
+                        android:text="x"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView31"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="0dp"
+                android:visibility="invisible" />
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/btnColor"
+                app:cardCornerRadius="15dp"
+                app:contentPadding="5dp"
+                android:id="@+id/update"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:text="Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView32"
+                    android:textAlignment="center" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/examOnly"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/btnColor"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/prelimTooltip"
+                            android:layout_margin="5dp"
+                            app:cardPreventCornerOverlap="false"
+                            android:layout_width="20dp"
+                            app:cardElevation="0dp"
+                            android:layout_height="20dp">
+
+                            <TextView
+                                android:text="\?"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView100"
+                                android:textAlignment="center"
+                                android:gravity="center_vertical" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Prelim"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView55"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|bold"
+                        android:layout_width="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/prelimExam"
+                        android:layout_weight="1"
+                        android:hint="Grade"
+                        android:maxLength="5"
+                        android:layout_toRightOf="@+id/textView55"
+                        android:layout_marginRight="40dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/btnColor"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/midtermTooltip"
+                            android:layout_margin="5dp"
+                            app:cardPreventCornerOverlap="false"
+                            android:layout_width="20dp"
+                            app:cardElevation="0dp"
+                            android:layout_height="20dp">
+
+                            <TextView
+                                android:text="\?"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView101"
+                                android:textAlignment="center"
+                                android:gravity="center_vertical" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Midterm"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView58"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|bold"
+                        android:layout_width="80dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/midtermExam"
+                        android:layout_weight="1"
+                        android:hint="Grade"
+                        android:maxLength="5"
+                        android:layout_toRightOf="@+id/textView58"
+                        android:layout_marginRight="40dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            app:cardBackgroundColor="@color/btnColor"
+                            app:cardCornerRadius="10dp"
+                            android:id="@+id/finalsTooltip"
+                            android:layout_margin="5dp"
+                            app:cardPreventCornerOverlap="false"
+                            android:layout_width="20dp"
+                            app:cardElevation="0dp"
+                            android:layout_height="20dp">
+
+                            <TextView
+                                android:text="\?"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView102"
+                                android:textAlignment="center"
+                                android:gravity="center_vertical" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Finals"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView56"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|bold"
+                        android:layout_width="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/finalsExam"
+                        android:layout_weight="1"
+                        android:hint="Grade"
+                        android:maxLength="5"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView56"
+                        android:layout_marginRight="40dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/termGrade">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prelim"
+                app:contentPadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:text="Prelim"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView28"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prelimMeetings"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:id="@+id/prelimImg"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/prelimList"
+                android:headerDividersEnabled="false"
+                android:footerDividersEnabled="false" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/midterm"
+                app:contentPadding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:text="Midterm"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView29"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/midtermMeetings"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:id="@+id/midtermImg"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/midtermList"
+                android:headerDividersEnabled="false"
+                android:footerDividersEnabled="false" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/finals"
+                app:contentPadding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:text="Finals"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView30"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/finalsMeetings"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_chevron_right"
+                        android:id="@+id/finalsImg"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/finalsList"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

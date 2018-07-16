@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showSnackBar">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/passing_grade_layout"
+            android:visibility="visible">
+
+            <TextView
+                android:text="Add Passing Grade"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/title"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:background="@drawable/dashboard"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView71"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:text="This Setting can be only Configured once."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView74"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Enter Passing grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView34"
+                    android:textSize="18sp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/passing_value"
+                    android:hint="Ex. 75"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_width="150dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="5dp"
+                    app:cardBackgroundColor="@android:color/holo_red_light"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:text="Cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView37"
+                        android:textAlignment="center" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="5dp"
+                    app:cardBackgroundColor="@color/btnColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:text="Save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView36"
+                        android:textAlignment="center" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutorial_popup"
+            android:gravity="center_horizontal"
+            android:background="#FFFFFA"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/layoutHolder">
+
+                        <TextView
+                            android:text="Sync Feature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/header"
+                            android:textAlignment="center"
+                            android:padding="10dp"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            app:srcCompat="@drawable/ic_analytics"
+                            android:id="@+id/image"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:layout_height="500dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/footer"
+                            android:textAlignment="viewStart"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:text="Sample Footer" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#FFFFFA"
+                            android:id="@+id/done"
+                            app:cardPreventCornerOverlap="false"
+                            app:contentPadding="10dp">
+
+                            <TextView
+                                android:text="FINISH"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView79"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="#FFFFFA"
+                            android:id="@+id/next"
+                            app:cardPreventCornerOverlap="false"
+                            app:contentPadding="10dp"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:text="NEXT"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/textView80"
+                                android:textAlignment="center"
+                                android:textSize="18sp" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

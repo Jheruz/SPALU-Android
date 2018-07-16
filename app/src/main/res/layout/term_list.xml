@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Select Term"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/name"
+            android:textSize="24sp"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/dashboard" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardElevation="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/close"
+                app:cardBackgroundColor="@color/headerColor"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:text="x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView31"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:text="Select term to display in pie chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView72"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/btnColor"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        android:id="@+id/prelim"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:text="Prelim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView32"
+            android:textAlignment="center" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/btnColor"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        android:id="@+id/midterm"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:text="Midterm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textAlignment="center" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/btnColor"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="10dp"
+        android:id="@+id/finals"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:text="Finals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView34"
+            android:textAlignment="center" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

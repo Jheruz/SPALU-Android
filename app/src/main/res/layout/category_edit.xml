@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showSnackBar">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Edit Category"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/title"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/dashboard"
+            android:padding="10dp"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/btnColor"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="5dp"
+                    android:hapticFeedbackEnabled="false"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_plus_circle_outline"
+                            android:id="@+id/imageView7"
+                            android:scaleType="fitXY"
+                            android:layout_height="25dp"
+                            android:layout_width="25dp" />
+
+                        <TextView
+                            android:text="Save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addText"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/catList" />
+    </LinearLayout>
+</RelativeLayout>

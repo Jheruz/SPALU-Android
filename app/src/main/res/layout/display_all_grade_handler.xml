@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Card_View"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        app:cardElevation="5dp"
+        app:contentPadding="2dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:gravity="center_vertical"
+                android:id="@+id/name"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:text="DELA CRUZ, JEROME B." />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0.6"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:text="Prelim"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prelimLabel"
+                            android:fontFamily="serif"
+                            android:textStyle="normal|bold"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prelim"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="serif"
+                            android:textColor="#F44336" />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prelimEquivalent"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="Midterm"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/midtermLabel"
+                            android:fontFamily="serif"
+                            android:textStyle="normal|bold"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/midterm"
+                            android:fontFamily="serif"
+                            android:textColor="#F44336" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/midtermEquivalent"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:paddingRight="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="Finals"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/finals"
+                            android:fontFamily="serif"
+                            android:textStyle="normal|bold"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/finalterm"
+                            android:fontFamily="serif"
+                            android:textColor="#F44336" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/finalsEquivalent"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:paddingRight="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="Average"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView19"
+                            android:fontFamily="serif"
+                            android:textStyle="normal|bold"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/average"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:textColor="#F44336" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:text="Remarks:"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView15"
+                            android:fontFamily="serif"
+                            android:textStyle="normal|bold"
+                            android:layout_width="80dp" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:id="@+id/remarks"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="serif"
+                            android:textColor="#F44336" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:layout_width="1dp"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        app:srcCompat="@drawable/ic_analytics"
+                        android:id="@+id/imageView4"
+                        android:scaleType="fitCenter"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:alpha="0.6" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/stats"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="35dp"
+                        app:cardElevation="5dp"
+                        app:cardBackgroundColor="@color/btnColor"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:text="Reports"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView7"
+                            android:gravity="center"
+                            android:alpha="0.6" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

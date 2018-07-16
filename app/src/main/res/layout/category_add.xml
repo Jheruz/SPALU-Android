@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showSnackBar">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Add Category"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/title"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@drawable/dashboard"
+            android:padding="10dp"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hideWhenAdd">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:text="you can only add category if you didn't add grade yet."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/name"
+                    android:hint="Category Name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/percent"
+                    android:layout_weight="1"
+                    android:hint="Percentage" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/btnColor"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="5dp"
+                    android:hapticFeedbackEnabled="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_plus_circle_outline"
+                            android:id="@+id/imageView7"
+                            android:scaleType="fitXY"
+                            android:layout_height="25dp"
+                            android:layout_width="25dp" />
+
+                        <TextView
+                            android:text="Add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addText"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/displayWhenAdd"
+            android:visibility="gone">
+
+            <TextView
+                android:text="You added category please configure overall average."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titlePrompt"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/btnColor"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="15dp"
+                    app:contentPadding="5dp"
+                    android:hapticFeedbackEnabled="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <ImageView
+                            app:srcCompat="@android:drawable/ic_menu_save"
+                            android:id="@+id/imageView8"
+                            android:scaleType="fitXY"
+                            android:layout_height="25dp"
+                            android:layout_width="25dp" />
+
+                        <TextView
+                            android:text="Save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/saveText"
+                            android:layout_marginLeft="5dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/categoryList" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

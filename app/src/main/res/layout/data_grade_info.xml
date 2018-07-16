@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        app:cardBackgroundColor="@color/btnColor"
+                        app:cardCornerRadius="10dp"
+                        android:id="@+id/showTooltip"
+                        android:layout_margin="5dp"
+                        app:cardPreventCornerOverlap="false"
+                        android:layout_width="20dp"
+                        app:cardElevation="0dp"
+                        android:layout_height="20dp">
+
+                        <TextView
+                            android:text="\?"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView32"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/una">
+
+                    <TextView
+                        android:text="Title"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView13"
+                        android:layout_width="100dp" />
+
+                    <TextView
+                        android:text="Test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/caption"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/dalawa"
+                    android:layout_below="@+id/una">
+
+                    <TextView
+                        android:text="Date"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView27"
+                        android:textSize="14sp"
+                        android:layout_width="100dp" />
+
+                    <TextView
+                        android:text="12/07/2017"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tatlo"
+                    android:layout_below="@+id/dalawa">
+
+                    <TextView
+                        android:text="Grade"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView33"
+                        android:textSize="14sp"
+                        android:layout_width="100dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gradeEditText"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:maxLength="5"
+                        android:selectAllOnFocus="true"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

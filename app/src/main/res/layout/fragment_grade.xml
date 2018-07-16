@@ -1,0 +1,35 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.laguna.university.studentperformanceanalytics.GradeFragment"
+    android:id="@+id/drawer_Layout">
+
+    <FrameLayout
+        android:layout_above="@+id/bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gsFrag">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_dialog_dialer"
+            android:id="@+id/openDrawer"
+            android:layout_margin="5dp"
+            app:backgroundTint="@color/btnColor"
+            app:elevation="5dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/drawer_view" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
